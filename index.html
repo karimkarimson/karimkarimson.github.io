@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Karim Aouini</title>
+</head>
+<body>
+    <header>
+        <img src="./imgs/face.png" alt="Karim Aouini’s face" width="200" height="200">
+    </header>
+    <nav>        
+        <a class="hamburger" href="#menu">
+            <span class="material-icons">
+            &#x2630; Menu
+            </span>
+        </a>
+        <ol class="menu" id="menu">
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#biography">Biography</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a class="close" href="#">&#10006; Close</a></li>
+        </ol>
+    </nav>
+    <!-- main content of the site is the presentation of Karim Aouini -->
+    <main>
+        <!-- hgroup is used to group a paragraph and heading, in this case to add a p as a tagline -->
+        <hgroup>        
+            <h1>Welcome to Karim’s Website</h1>
+            <p>Hi, I’m Karim Aouini a curious <a href="https://about.gitlab.com/topics/devops/">DevOps</a>, <a href="https://en.wikipedia.org/wiki/Solution_architecture">Solutions Architect</a>, <a href="https://csrc.nist.gov/glossary/term/system_administrator">System Administrator</a> and <a href="https://en.wikipedia.org/wiki/Web_development">Web Developer</a> from Berlin, Germany.</p>
+        </hgroup>
+        <p>If you want to know more about my professional side checkout my <a href="#">Skills</a> & <a href="#">Biography</a>, <a href="#">Blog</a> or my <a href="#">Projects</a> and feel free to <a href="#">Contact</a> me if you have any questions or suggestions.</p>
+    </main>
+    <!-- Different sections of the site start here -->
+    <section id="skills">
+        <!-- this tagline is to download the technical cv -->
+        <hgroup>        
+            <h2>Skills</h2>
+            <!-- <object data="./data/Karim-Aouini-ProjectCV.pdf" type="application/pdf"></object> -->
+            <p><a href="./data/Karim-Aouini-ProjectCV.pdf">Download</a> Karim Aouini’s Projects CV</p>
+        </hgroup>
+        <!-- An article is a stand-alone section, so it makes sense to use it for the skills section -->
+        <article>
+            <!-- the article has different sections -->
+            <section>
+                <h3>Certifications</h3>
+                <ul>
+                    <li>AWS Cloud Practitioner</li>
+                    <li>AWS Solutions Architect (ongoing)</li>
+                    <li>LPIC-1 (ongoing)</li>
+                </ul>
+            </section>
+            <section>
+                <h3>Cloud</h3>
+                <p>AWS: Simple Storage Service (S3), Elastic Compute Cloud (EC2), Auto Scaling, Lambda, Elastic Container Service (ECS), Fargate, Relational Database Service (RDS),   DynamoDB, DocumentDB, Elasticache, Identity and Access Management (IAM), Cognito, API Gateway, Route 53, Simple Queue Service (SQS), Simple Notification Service (SNS), Elastic Beanstalk, Cloud Formation, Virtual Private Cloud (VPC), Command Line Interface (AWS CLI),  CloudWatch, Well-Architected Tool</p>
+            </section>
+            <section>
+                <h3>Programming Languages</h3>
+                <!-- I’m splitting Backend and Frontend Languages -->
+                <section>
+                    <h4>Backend</h4>
+                    <ul>
+                        <li>Javascript - ES 5, ECMA 2018, Node JS v 16/18+</li>
+                        <li>Python - v 3.10+</li>
+                        <li>AWS Lambda, API-Gateway</li>
+                        <li>NGINX, Apache, Let’s Encrypt</li>
+                        <li>Rust, Go, Java (basics)</li>
+                    </ul>
+                </section>
+                <section>
+                    <h4>Frontend</h4>
+                    <ul>
+                        <li>React - 18.+, Express 4.18+, TypeScript, Angular</li>
+                        <li>HTML, CSS, Javascript</li>
+                        <li>Markdown</li>
+                    </ul>
+                </section>
+            </section>
+            <section>
+                <h3>Infrastructure as Code (IaC)</h3>
+                <ul>
+                    <li>Terraform, HCL - v 18.+</li>
+                    <li>CloudFormation</li>
+                    <li>YAML, JSON</li>
+                </ul>
+            </section>
+            <section>
+                <h3>Containerization & Orchestration</h3>
+                <ul>
+                    <li>Docker (Compose, Swarm, ECS)</li>
+                    <li>Kubernetes</li>
+                </ul>
+            </section>
+            <section>
+                <h3>DevOps</h3>
+                <ul>
+                    <li>GitHub, GitLab</li>
+                    <li>CI/CD</li>
+                    <li>Ansible</li>
+                </ul>
+            </section>
+            <section>
+                <h4>Operation Systems</h4>
+                <ul>
+                    <li>Linux 5.1+ (Debian 11.+, Ubuntu 16.4+, Arch, Amazon Linux 1 & 2)</li>
+                    <li>Windows - 11, 10</li>
+                    <li>MacOS - 12, 11, 10+</li>
+                </ul>
+            </section>
+            <section>
+                <h3>Databases</h3>
+                <ul>
+                    <li>MongoDB, DocumentDB</li>
+                    <li>CouchDB, DynamoDB</li>
+                    <li>PostgreSQL, MariaDB, MySQL, RDS</li>
+                    <li>Redis, Elasticache</li>
+                </ul>
+            </section>
+            <section>
+                <h3>Tools</h3>
+                <ul>
+                    <li>VCS - Git, GitHub, GitLab</li>
+                    <li>Jira, Confluence, Trello, Scrum</li>
+                    <li>Vim, NeoVim, VSCode</li>
+                    <li>Sh, Bash, Zsh</li>
+                    <li>Tmux, Qtile, Alacritty</li>
+                    <li>PowerShell</li>
+                    <li>Draw.io, Excalidraw, Canva</li>
+                    <li>Miro, Figma</li>
+                </ul>
+            </section>
+        </article>
+    </section>
+    <section id="biography">
+        <h2>Biography</h2>
+        <p></p>
+    </section>
+    <section id="blog">
+        <h2>Blog</h2>
+        <article></article>
+    </section>
+    <section id="projects">
+        <h2>Projects</h2>
+        <p></p>
+    </section>
+    <section id="contact">
+        <h2>Contact</h2>
+        <p></p>
+    </section>
+</body>
+</html>
