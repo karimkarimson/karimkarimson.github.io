@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <img src="./imgs/face.png" alt="Karim Aouini’s face" width="200" height="200">
+        <img id="karimsface" src="./imgs/face.png" alt="Karim Aouini’s face" width="200" height="200">
     </header>
     <nav>        
         <a class="hamburger" href="#menu">
@@ -42,97 +42,94 @@
             <!-- <object data="./data/Karim-Aouini-ProjectCV.pdf" type="application/pdf"></object> -->
             <p><a href="./data/Karim-Aouini-ProjectCV.pdf">Download</a> Karim Aouini’s Projects CV</p>
         </hgroup>
-        <!-- An article is a stand-alone section, so it makes sense to use it for the skills section -->
-        <article>
-            <!-- the article has different sections -->
+        <!-- the article has different sections -->
+        <section>
+            <h3>Certifications</h3>
+            <ul>
+                <li>AWS Cloud Practitioner</li>
+                <li>AWS Solutions Architect (ongoing)</li>
+                <li>LPIC-1 (ongoing)</li>
+            </ul>
+        </section>
+        <section>
+            <h3>Cloud</h3>
+            <p>AWS: Simple Storage Service (S3), Elastic Compute Cloud (EC2), Auto Scaling, Lambda, Elastic Container Service (ECS), Fargate, Relational Database Service (RDS),   DynamoDB, DocumentDB, Elasticache, Identity and Access Management (IAM), Cognito, API Gateway, Route 53, Simple Queue Service (SQS), Simple Notification Service (SNS), Elastic Beanstalk, Cloud Formation, Virtual Private Cloud (VPC), Command Line Interface (AWS CLI),  CloudWatch, Well-Architected Tool</p>
+        </section>
+        <section>
+            <h3>Programming Languages</h3>
+            <!-- I’m splitting Backend and Frontend Languages -->
             <section>
-                <h3>Certifications</h3>
+                <h4>Backend</h4>
                 <ul>
-                    <li>AWS Cloud Practitioner</li>
-                    <li>AWS Solutions Architect (ongoing)</li>
-                    <li>LPIC-1 (ongoing)</li>
+                    <li>Javascript - ES 5, ECMA 2018, Node JS v 16/18+</li>
+                    <li>Python - v 3.10+</li>
+                    <li>AWS Lambda, API-Gateway</li>
+                    <li>NGINX, Apache, Let’s Encrypt</li>
+                    <li>Rust, Go, Java (basics)</li>
                 </ul>
             </section>
             <section>
-                <h3>Cloud</h3>
-                <p>AWS: Simple Storage Service (S3), Elastic Compute Cloud (EC2), Auto Scaling, Lambda, Elastic Container Service (ECS), Fargate, Relational Database Service (RDS),   DynamoDB, DocumentDB, Elasticache, Identity and Access Management (IAM), Cognito, API Gateway, Route 53, Simple Queue Service (SQS), Simple Notification Service (SNS), Elastic Beanstalk, Cloud Formation, Virtual Private Cloud (VPC), Command Line Interface (AWS CLI),  CloudWatch, Well-Architected Tool</p>
-            </section>
-            <section>
-                <h3>Programming Languages</h3>
-                <!-- I’m splitting Backend and Frontend Languages -->
-                <section>
-                    <h4>Backend</h4>
-                    <ul>
-                        <li>Javascript - ES 5, ECMA 2018, Node JS v 16/18+</li>
-                        <li>Python - v 3.10+</li>
-                        <li>AWS Lambda, API-Gateway</li>
-                        <li>NGINX, Apache, Let’s Encrypt</li>
-                        <li>Rust, Go, Java (basics)</li>
-                    </ul>
-                </section>
-                <section>
-                    <h4>Frontend</h4>
-                    <ul>
-                        <li>React - 18.+, Express 4.18+, TypeScript, Angular</li>
-                        <li>HTML, CSS, Javascript</li>
-                        <li>Markdown</li>
-                    </ul>
-                </section>
-            </section>
-            <section>
-                <h3>Infrastructure as Code (IaC)</h3>
+                <h4>Frontend</h4>
                 <ul>
-                    <li>Terraform, HCL - v 18.+</li>
-                    <li>CloudFormation</li>
-                    <li>YAML, JSON</li>
+                    <li>React - 18.+, Express 4.18+, TypeScript, Angular</li>
+                    <li>HTML, CSS, Javascript</li>
+                    <li>Markdown</li>
                 </ul>
             </section>
-            <section>
-                <h3>Containerization & Orchestration</h3>
-                <ul>
-                    <li>Docker (Compose, Swarm, ECS)</li>
-                    <li>Kubernetes</li>
-                </ul>
-            </section>
-            <section>
-                <h3>DevOps</h3>
-                <ul>
-                    <li>GitHub, GitLab</li>
-                    <li>CI/CD</li>
-                    <li>Ansible</li>
-                </ul>
-            </section>
-            <section>
-                <h4>Operation Systems</h4>
-                <ul>
-                    <li>Linux 5.1+ (Debian 11.+, Ubuntu 16.4+, Arch, Amazon Linux 1 & 2)</li>
-                    <li>Windows - 11, 10</li>
-                    <li>MacOS - 12, 11, 10+</li>
-                </ul>
-            </section>
-            <section>
-                <h3>Databases</h3>
-                <ul>
-                    <li>MongoDB, DocumentDB</li>
-                    <li>CouchDB, DynamoDB</li>
-                    <li>PostgreSQL, MariaDB, MySQL, RDS</li>
-                    <li>Redis, Elasticache</li>
-                </ul>
-            </section>
-            <section>
-                <h3>Tools</h3>
-                <ul>
-                    <li>VCS - Git, GitHub, GitLab</li>
-                    <li>Jira, Confluence, Trello, Scrum</li>
-                    <li>Vim, NeoVim, VSCode</li>
-                    <li>Sh, Bash, Zsh</li>
-                    <li>Tmux, Qtile, Alacritty</li>
-                    <li>PowerShell</li>
-                    <li>Draw.io, Excalidraw, Canva</li>
-                    <li>Miro, Figma</li>
-                </ul>
-            </section>
-        </article>
+        </section>
+        <section>
+            <h3>Infrastructure as Code (IaC)</h3>
+            <ul>
+                <li>Terraform, HCL - v 18.+</li>
+                <li>CloudFormation</li>
+                <li>YAML, JSON</li>
+            </ul>
+        </section>
+        <section>
+            <h3>Containerization & Orchestration</h3>
+            <ul>
+                <li>Docker (Compose, Swarm, ECS)</li>
+                <li>Kubernetes</li>
+            </ul>
+        </section>
+        <section>
+            <h3>DevOps</h3>
+            <ul>
+                <li>GitHub, GitLab</li>
+                <li>CI/CD</li>
+                <li>Ansible</li>
+            </ul>
+        </section>
+        <section>
+            <h4>Operation Systems</h4>
+            <ul>
+                <li>Linux 5.1+ (Debian 11.+, Ubuntu 16.4+, Arch, Amazon Linux 1 & 2)</li>
+                <li>Windows - 11, 10</li>
+                <li>MacOS - 12, 11, 10+</li>
+            </ul>
+        </section>
+        <section>
+            <h3>Databases</h3>
+            <ul>
+                <li>MongoDB, DocumentDB</li>
+                <li>CouchDB, DynamoDB</li>
+                <li>PostgreSQL, MariaDB, MySQL, RDS</li>
+                <li>Redis, Elasticache</li>
+            </ul>
+        </section>
+        <section>
+            <h3>Tools</h3>
+            <ul>
+                <li>VCS - Git, GitHub, GitLab</li>
+                <li>Jira, Confluence, Trello, Scrum</li>
+                <li>Vim, NeoVim, VSCode</li>
+                <li>Sh, Bash, Zsh</li>
+                <li>Tmux, Qtile, Alacritty</li>
+                <li>PowerShell</li>
+                <li>Draw.io, Excalidraw, Canva</li>
+                <li>Miro, Figma</li>
+            </ul>
+        </section>
     </section>
     <section id="biography">
         <h2>Biography</h2>
@@ -140,7 +137,17 @@
     </section>
     <section id="blog">
         <h2>Blog</h2>
-        <article></article>
+        <article>
+            <h3>Let's talk Operating Systems - Part 1</h3>
+            <p>Operating systems connect computer hardware and software. They translate zeros and ones to human readable and sometimes even enjoyable formats.
+            <p>Reading this ongoing statistic (Statista - https://buff.ly/3rNxl8t ) the most used operating systems are Windows (65%) and MacOS (20%). Only 3% use Linux.</p> 
+            <p>If you dive into IT, you will stumble across Linux and realise how far spread and widely appreciated it actually is. So let's close this discrepancy by changing our point of view.</p>
+            <p>Statistics around this topic are difficult to register. If we consider web access statistics, the numbers shift towards Android, with a 40% (Statcounter - https://buff.ly/45BGy1r ) share. This derives from users using mobile devices and Android taking 70% of this market (W3-Techs - https://buff.ly/402h7Vn).</p>
+            <p>Android relies on the Linux-Kernel to do its magic, hence the emphasis.</p>
+            <p>Bearing in mind that servers enable us to retrieve and exchange information, we can conclude these statistics with 80% of servers running on Linux (https://buff.ly/46RuIRM).</p>
+            <p>As a striving DevOps, I have stumbled upon Linux early in my IT-journey. Interacting with this open source operating system has taught me a lot about our computers and their environment.</p>
+            <p>For all these lessons learned I deeply appreciate Linux and would like to spread this enthusiasm, so please stay tuned for Part 2 of this topic.</p>
+        </article>
     </section>
     <section id="projects">
         <h2>Projects</h2>

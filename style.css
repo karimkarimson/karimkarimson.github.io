@@ -19,14 +19,13 @@ h1 {
 /* nur em oder rem */
 header {
     /* background-color: rgba(0, 255, 0, 0.2); */
-    img {
-        padding: .5em;
-        border-radius: 50%;
-        width: 12.5rem;
-        height: 12.5rem;
-    }
 }
-
+#karimsface {
+    padding: .5em;
+    border-radius: 50%;
+    width: 12.5rem;
+    height: 12.5rem;
+}
 /* Navbar-Logic */
 .hamburger {
   position: fixed;
@@ -49,7 +48,7 @@ header {
   list-style: none;
   /* background: rgba(0, 0, 255, 0.2); */
 
-  transform: translateX(100%);
+  transform: translateX(120%);
   transition: transform 0.3s ease;
 }
 .menu:target {
