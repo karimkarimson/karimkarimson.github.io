@@ -1,5 +1,5 @@
 /* mobile first */
-/* cpls per font */
+/* characters per lines per font are 45-75 ref:"https://www.smashingmagazine.com/2014/09/balancing-line-length-font-size-responsive-web-design/#:~:text=Derived%20from%20this%20number%20is,punctuation)%20per%20line%20for%20print."*/
 
 body {
     width: 85%;
@@ -10,35 +10,37 @@ body {
     letter-spacing: .05em;
     line-height: 1.3em;
 
+    /* background for marking space */
     /* background-color: rgba(255, 0, 0, 0.2); */
 }
 h1 {
   line-height: 1.3em;
 }
-
-/* nur em oder rem */
-header {
+/* * Header Section */
+/* header { */
+    /* background for marking space */
     /* background-color: rgba(0, 255, 0, 0.2); */
-}
+/* } */
 #karimsface {
-    padding: .5em;
+    margin-top: 3em;
     border-radius: 50%;
     width: 12.5rem;
     height: 12.5rem;
 }
+
 /* Navbar-Logic */
 .hamburger {
   position: fixed;
-  top: 2em;
-  right: 2.5em;
+  top: 1em;
+  right: 2em;
   z-index: 99;
   background: white;
   cursor: pointer;
 }
 .menu {
   position: fixed;
-  top: 2.5em;
-  right: 2em;
+  top: 2em;
+  right: 1em;
   z-index: 90;
 
   display: flex;
@@ -46,7 +48,7 @@ header {
   gap: .3em;
 
   list-style: none;
-  /* background: rgba(0, 0, 255, 0.2); */
+  background: rgba(255, 255, 255, 0.95);
 
   transform: translateX(120%);
   transition: transform 0.3s ease;
@@ -55,3 +57,19 @@ header {
   /* show menu */
   transform: translateX(0%);
 }
+
+a {
+  color: rgb(30, 30, 30);
+  font-weight: bold;
+  /* background-color: rgba(0, 0, 0, 0.1); */
+  text-decoration: none;
+}
+/* *styling main */
+/* *styling definition lists */
+/* dl {} */
+/* dt {} */
+/* dd {} */
+
+/* .download {
+  display: inline-block;
+} */
