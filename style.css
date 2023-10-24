@@ -1,21 +1,6 @@
 /* mobile first */
 /* characters per lines per font are 45-75 ref:"https://www.smashingmagazine.com/2014/09/balancing-line-length-font-size-responsive-web-design/#:~:text=Derived%20from%20this%20number%20is,punctuation)%20per%20line%20for%20print."*/
 
-body {
-    width: 85%;
-    margin: 0 auto 0 auto;
-
-    font-family: serif;
-    font-size: 1.4em;
-    letter-spacing: .05em;
-    line-height: 1.3em;
-
-    /* background for marking space */
-    /* background-color: rgba(255, 0, 0, 0.2); */
-}
-h1 {
-  line-height: 1.3em;
-}
 /* * Header Section */
 /* header { */
     /* background for marking space */
@@ -27,8 +12,6 @@ h1 {
     width: 12.5rem;
     height: 12.5rem;
 }
-
-/* Navbar-Logic */
 .hamburger {
   position: fixed;
   top: 1em;
@@ -57,19 +40,91 @@ h1 {
   /* show menu */
   transform: translateX(0%);
 }
+/* ! Mobile Screens */
+@media (min-width: 320px) {
+  /* * general styling */
+  body {
+      width: 85%;
+      margin: 0 auto 0 auto;
 
-a {
-  color: rgb(30, 30, 30);
-  font-weight: bold;
-  /* background-color: rgba(0, 0, 0, 0.1); */
-  text-decoration: none;
+      font-family: serif;
+      font-size: 1.4em;
+      letter-spacing: .05em;
+      line-height: 1.3em;
+
+      /* background for marking space */
+      /* background-color: rgba(255, 0, 0, 0.2); */
+  }
+  /* * styling headings */
+  h1 {
+    line-height: 1.3em;
+  }
+  h2, h3 {
+    margin: 1.5em 0 0 0em;
+  }
+  h4 {
+    margin: 0.5em 0 0em 0em;
+  }
+  a {
+    color: rgb(30, 30, 30);
+    font-weight: bold;
+    /* font-style: italic; */
+    /* background-color: rgba(0, 0, 0, 0.1); */
+    text-decoration: none;
+    letter-spacing: 0.06em;
+  }
+  a:active{
+    text-decoration: underline;
+    background-color: rgba(238, 216, 118, 0.8);
+  }
+  /* * styling lists */
+  ul {
+    margin: 0.3em 0 0.5em 0;
+  }
+    /* *styling definition lists */
+  dl {
+    margin: 0.3em 0 0.8em 0;
+  }
+  dt {
+    margin: 0.4em 0 0 0;
+  }
+  dd {
+    margin: 0em 0 0.4em 1.8em;
+    font-size: 0.8em;
+  }
+
+  /* Navbar-Logic */
+  
+  section.download p {
+      margin: 0 0 0 2.4em;
+      word-spacing: 1em;
+  }
+  section.time-heading p {
+    margin: 0em 0 0em 0;
+    /* text-align: right; */
+    font-size: 0.8em;
+    font-style: italic;
+  }
+  section.biography h4 {
+    margin: 0.5em 0 0em 0em;
+  }
+  section.biography dl {
+    margin: 0em 0 1.2em 0.8em;
+  }
+
+  /* *styling main */
+
+  /* .download {
+    display: inline-block;
+  } */
 }
-/* *styling main */
-/* *styling definition lists */
-/* dl {} */
-/* dt {} */
-/* dd {} */
 
-/* .download {
-  display: inline-block;
-} */
+
+/* ! Tablet Screens */
+@media (min-width: 768px) {}
+
+/* ! Medium Size Screens */
+@media (min-width: 992px) {}
+
+/* ! Desktop Size Screens */
+@media (min-width: 1200px) {}

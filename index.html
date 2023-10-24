@@ -30,11 +30,9 @@
         <!-- hgroup is used to group a paragraph and heading, in this case to add a p as a tagline -->
         <!-- !got that part wrong. hgroup is to group multiple headings -->
         <h1>Hi, I’m Karim Aouini,</h1>
-        <p>striving to become a <a href="https://about.gitlab.com/topics/devops/">DevOps</a>, skilled in <a href="https://en.wikipedia.org/wiki/Solution_architecture">solution architecture</a>, <a href="https://csrc.nist.gov/glossary/term/system_administrator">system administration</a> and <a href="https://en.wikipedia.org/wiki/Web_development">web development</a> from Berlin, Germany.</p>
-        <p>If you want to know more about my professional side checkout my <a href="#">Skills</a> & <a href="#">Biography</a>, <a href="#">Blog</a> or my <a href="#">Projects</a> and feel free to <a href="#">Contact</a> me if you have any questions or suggestions.</p>
+        <p>striving to become a <a href="https://about.gitlab.com/topics/devops/">DevOps</a>, skilled as a <a href="https://en.wikipedia.org/wiki/Solution_architecture">Solution Architect</a>, <a href="https://csrc.nist.gov/glossary/term/system_administrator">System Administrator</a> and <a href="https://en.wikipedia.org/wiki/Web_development">Web Developer</a> from Berlin, Germany.</p>
+        <p>If you want to know more about my professional side checkout my <a href="#skills">Skills</a> & <a href="#biography">Biography</a>, <a href="#blog">Blog</a> or my <a href="#projects">Projects</a> and feel free to <a href="#contact">Contact</a> me if you have any questions or suggestions.</p>
     </main>
-    <br>
-    <br>
     <hr>
     <!-- Different sections of the site start here -->
     <section id="skills">
@@ -42,9 +40,8 @@
         <!-- this tagline is to download the technical cv -->
         <section class="download">        
             <!-- <object data="./data/Karim-Aouini-ProjectCV.pdf" type="application/pdf"></object> -->
-            <h3>Download ProjectCV as:</h3>
-            <p><a href="./data/Karim-Aouini-ProjectCV.pdf">&#8226; .pdf</a></p>
-            <p><a href="./data/Karim-Aouini-ProjectCV.docx">&#8226; .docx - Word</a></p>
+            <h4>Download Tech-CV as:</h4>
+            <p>&#8226; <a href="./data/Karim-Aouini-ProjectCV.pdf">.pdf</a> or <a href="./data/Karim-Aouini-ProjectCV.docx">.docx</a></p>
         </section>
         <!-- the article has different sections -->
         <section>
@@ -105,7 +102,7 @@
             </ul>
         </section>
         <section>
-            <h4>Operation Systems</h4>
+            <h3>Operation Systems</h3>
             <ul>
                 <li>Linux 5.1+ (Debian 11.+, Ubuntu 16.4+, Arch, Amazon Linux 1 & 2)</li>
                 <li>Windows - 11, 10</li>
@@ -150,15 +147,15 @@
             </dl>
         </section>
     </section>
-    <section id="biography">
+    <hr>
+    <section class="biography" id="biography">
         <h2>Biography</h2>
         <section>
-            <hgroup>
+            <section class="time-heading">
                 <h3>DevOps</h3>
-                <p><time datetime="2022-02-06">February 2022</time> - <time datetime="2023-02-05">ongoing</time></p>
-                <p>Full time DevOps course at <a href="https://techstarter.de/">Techstarter GmbH</a></p>
+                <p><time datetime="2022-02-06">02/2022</time> - <time datetime="2023-02-05">Ongoing</time> Full time DevOps course at <a href="https://techstarter.de/">Techstarter GmbH</a></p>
                 <p>In this course I aquired knowledge about different technologies and build up my tech and project stack.</p>
-            </hgroup>
+            </section>
             <section>
                 <h4>Projects</h4>
                 <dl>
@@ -170,12 +167,11 @@
             </section>
         </section>
         <section>
-            <hgroup>
+            <section class="time-heading">
                 <h3>Aouini Services & Consultancy</h3>
-                <p><time datetime="2020-05-01">May 2020</time> - <time datetime="2021-07-31">October 2022</time></p>
-                <p>Sole proprietor</p>
+                <p><time datetime="2020-05-01">05/2020</time> - <time datetime="2021-07-31">10/2022</time> Sole proprietor</p>
                 <p>SHORT DESCRIPTION OF TASKS</p>
-            </hgroup>
+            </section>
             <section>
                 <h4>Projects</h4>
                 <dl>
@@ -189,12 +185,12 @@
             </section>
         </section>
         <section>
-            <hgroup>
+            <section class="time-heading">
                 <h3>Bellmer GmbH</h3>
                 <p><time datetime="2021-08-01">October 2021</time> - <time datetime="2022-05-31">May 2022</time></p>
                 <p>Assisstant Manager</p>
                 <p>SHORT DESCRIPTION OF TASKS</p>
-            </hgroup>
+            </section>
             <section>
                 <h4>Projects</h4>
                 <dl>
@@ -210,24 +206,24 @@
         <section>
             <h3>Education</h3>
             <section>
-                <hgroup>
+                <section class="time-heading">
                     <h4>BSc. Horticulture</h4>
                     <p><time datetime="2012-10-01">October 2012</time> - <time datetime="2016-08-31">August 2016</time></p>
-                </hgroup>
+                </section>
                 <p><a href="https://www.bht-berlin.de/en/">Berliner Hochschule für Technik</a></p>
             </section>
             <section>
-                <hgroup>
+                <section class="time-heading">
                     <h4>Electrical Engineering</h4>
                     <p><time datetime="2011-10-01">October 2011</time> - <time datetime="2012-08-31">August 2012</time></p>
-                </hgroup>
+                </section>
                 <p><a href="https://www.tu.berlin/">TU Berlin</a></p>
             </section>
             <section>
-                <hgroup>
+                <section class="time-heading">
                     <h4>High School Diploma</h4>
                     <p><time datetime="2010-06-01">June 2010</time></p>
-                </hgroup>
+                </section>
                 <p><a href="https://sgym.de/">Schiller Gymnasium</a></p>
             </section>
         </section>
@@ -243,6 +239,7 @@
             </dl>
         </section>
     </section>
+    <hr>
     <section id="blog">
         <h2>Blog</h2>
         <article>
@@ -257,6 +254,7 @@
             <p>For all these lessons learned I deeply appreciate Linux and would like to spread this enthusiasm, so please stay tuned for Part 2 of this topic.</p>
         </article>
     </section>
+    <hr>
     <section id="projects">
         <h2>Projects</h2>
         <dl>
@@ -274,14 +272,15 @@
             <dd><a href="#">Link</a> following soon</dd>
         </dl>
     </section>
+    <hr>
     <section id="contact">
         <h2>Contact</h2>
-        <p>Please contact me:</p>
+        <p>Feel free to contact me:</p>
         <address>
-            <a href="mailto:karim@aouini.de">karim@aouini.de</a>
-            <a href="tel:+17696751369">+49 176 96 751 369</a>
-            <a href="https://www.linkedin.com/in/karimaouini/">Karim Aouini on LinkedIn</a>
-            <a href="https://github.com/karimkarimson">Karim Aouini on GitHub</a>
+            <p><a href="mailto:karim@aouini.de">karim@aouini.de</a></p>
+            <p><a href="tel:+17696751369">+49 176 96 751 369</a></p>
+            <p><a href="https://www.linkedin.com/in/karimaouini/">Karim on LinkedIn</a></p>
+            <p><a href="https://github.com/karimkarimson">Karim on GitHub</a></p>
         </address>
     </section>
 </body>
