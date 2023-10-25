@@ -1,17 +1,40 @@
-/* mobile first */
+/*? quick notes */
 /* characters per lines per font are 45-75 ref:"https://www.smashingmagazine.com/2014/09/balancing-line-length-font-size-responsive-web-design/#:~:text=Derived%20from%20this%20number%20is,punctuation)%20per%20line%20for%20print."*/
 
-/* * Header Section */
-/* header { */
-    /* background for marking space */
-    /* background-color: rgba(0, 255, 0, 0.2); */
-/* } */
+/* -------------- */
+/*? general ideas */
+/** styling for mobile first, then laptop and desktop screen sizes */
+
+
+
+/* --------------- */
+
+/* ? stlying */
+/** css reset */
+h1, h2, h3, h4, h5, h6 {
+  font-size: 1.3em;
+  margin: 0 0 0 0;
+}
+hr {
+  margin: 2em 0 2em 0;
+}
+body {
+    width: 85%;
+    margin: 0 auto 0 auto;
+
+    font-family: serif;
+    font-size: 1.4em;
+    letter-spacing: .05em;
+    line-height: 1.3em;
+}
+
 #karimsface {
     margin-top: 3em;
     border-radius: 50%;
     width: 12.5rem;
     height: 12.5rem;
 }
+/** Navbar-Logic */
 .hamburger {
   position: fixed;
   top: 1em;
@@ -40,30 +63,24 @@
   /* show menu */
   transform: translateX(0%);
 }
-/* ! Mobile Screens */
+
+
+
+
+/* ? Styling for Mobile Screens */
+
 @media (min-width: 320px) {
-  /* * general styling */
-  body {
-      width: 85%;
-      margin: 0 auto 0 auto;
-
-      font-family: serif;
-      font-size: 1.4em;
-      letter-spacing: .05em;
-      line-height: 1.3em;
-
-      /* background for marking space */
-      /* background-color: rgba(255, 0, 0, 0.2); */
-  }
-  /* * styling headings */
+  /** general styling */
+  /** styling headings */
   h1 {
-    line-height: 1.3em;
+    margin: 1em 0 0 0;
   }
   h2, h3 {
-    margin: 1.5em 0 0 0em;
+    margin: 1em 0 0.5em 0;
+    font-size: 1.2em;
   }
-  h4 {
-    margin: 0.5em 0 0em 0em;
+  h3, h4, h5 {
+    font-size: 1em;
   }
   a {
     color: rgb(30, 30, 30);
@@ -77,11 +94,14 @@
     text-decoration: underline;
     background-color: rgba(238, 216, 118, 0.8);
   }
-  /* * styling lists */
+  /** styling lists and list elements*/
   ul {
-    margin: 0.3em 0 0.5em 0;
+    margin: 0 0 0.5em 0;
   }
-    /* *styling definition lists */
+  li {
+    margin: 0.2em 0 0.2em 0;
+  }
+  /**styling definition lists and elements*/
   dl {
     margin: 0.3em 0 0.8em 0;
   }
@@ -93,33 +113,56 @@
     font-size: 0.8em;
   }
 
-  /* Navbar-Logic */
-  
+  /** styling inline elements */
+  /* currently only span at Languages */
+  span {
+    margin: 0 3em 0 0;
+    float: right;
+  }
+
+  /* ! styling sections */
+  /* download sections */
   section.download p {
-      margin: 0 0 0 2.4em;
+      margin: 1em 0 1em 0;
+      text-align: center;
       word-spacing: 1em;
   }
+  section.download img {
+      width: 1.5em;
+      height: 1.5em;
+  }
+
+  /* sections with dates and quick summaries */
+  /* like 'biography' & 'education' */
   section.time-heading p {
     margin: 0em 0 0em 0;
     /* text-align: right; */
     font-size: 0.8em;
     font-style: italic;
   }
-  section.biography h4 {
-    margin: 0.5em 0 0em 0em;
+
+  /* section 'biography' */
+  section.biography h4, h5 {
+    margin: 0.5em 0 0 0;
+    font-size: 1em;
+  }
+  section.biography h5 {
+    font-size: 0.9em;
   }
   section.biography dl {
     margin: 0em 0 1.2em 0.8em;
   }
-
-  /* *styling main */
-
-  /* .download {
-    display: inline-block;
-  } */
+  section.education h4 {
+    font-size: 0.8em;
+  }
+  section.education p {
+    margin: 0em 0 0em 0;
+    font-size: 0.8em;
+  }
+  section.biography a {
+    font-size: 0.8em;
+  }
 }
-
-
 /* ! Tablet Screens */
 @media (min-width: 768px) {}
 
