@@ -18,6 +18,18 @@ h1, h2, h3, h4, h5, h6 {
 hr {
   margin: 2em 0 2em 0;
 }
+a {
+  color: rgb(30, 30, 30);
+  font-weight: bold;
+  /* font-style: italic; */
+  /* background-color: rgba(0, 0, 0, 0.1); */
+  text-decoration: none;
+  letter-spacing: 0.06em;
+}
+a:active{
+  text-decoration: underline;
+  background-color: rgba(238, 216, 118, 0.8);
+}
 body {
     width: 85%;
     margin: 0 auto 0 auto;
@@ -27,7 +39,14 @@ body {
     letter-spacing: .05em;
     line-height: 1.3em;
 }
+/* * adapt to darkmode */
+@media (prefers-color-scheme: dark) {
+  .download img {
+    filter: invert(1);
+  }
+}
 
+/* ? header section styling */
 #karimsface {
     margin-top: 3em;
     border-radius: 50%;
@@ -82,18 +101,6 @@ body {
   h3, h4, h5 {
     font-size: 1em;
   }
-  a {
-    color: rgb(30, 30, 30);
-    font-weight: bold;
-    /* font-style: italic; */
-    /* background-color: rgba(0, 0, 0, 0.1); */
-    text-decoration: none;
-    letter-spacing: 0.06em;
-  }
-  a:active{
-    text-decoration: underline;
-    background-color: rgba(238, 216, 118, 0.8);
-  }
   /** styling lists and list elements*/
   ul {
     margin: 0 0 0.5em 0;
@@ -110,7 +117,7 @@ body {
   }
   dd {
     margin: 0em 0 0.4em 1.8em;
-    font-size: 0.8em;
+    font-size: 1.1em;
   }
 
   /** styling inline elements */
@@ -135,39 +142,32 @@ body {
   /* sections with dates and quick summaries */
   /* like 'biography' & 'education' */
   section.time-heading p {
-    margin: 0em 0 0em 0;
+    margin: 0em 0 0em 0.5em;
     /* text-align: right; */
-    font-size: 0.8em;
+    font-size: 1em;
     font-style: italic;
   }
 
   /* section 'biography' */
   section.biography h4, h5 {
-    margin: 0.5em 0 0 0;
-    font-size: 1em;
-  }
-  section.biography h5 {
-    font-size: 0.9em;
+    margin: 0.5em 0 0.5em 0.5em;
   }
   section.biography dl {
-    margin: 0em 0 1.2em 0.8em;
+    margin: 0em 0 1.5em 0.8em;
   }
-  section.education h4 {
-    font-size: 0.8em;
-  }
+  /* section 'education' nested in biography */
   section.education p {
-    margin: 0em 0 0em 0;
-    font-size: 0.8em;
+    margin: 0em 0 0em 0.5em;
   }
   section.biography a {
-    font-size: 0.8em;
+    font-size: 0.9em;
   }
 }
 /* ! Tablet Screens */
-@media (min-width: 768px) {}
+/* @media (min-width: 768px) {} */
 
 /* ! Medium Size Screens */
-@media (min-width: 992px) {}
+/* @media (min-width: 992px) {} */
 
 /* ! Desktop Size Screens */
-@media (min-width: 1200px) {}
+/* @media (min-width: 1200px) {} */
