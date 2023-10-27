@@ -177,40 +177,69 @@
         <hr>
         <!--TODO: Sticky Navigation Menu for Biography Section -->
         <!-- Most Chapters have Datetime-Spans and a short description-paragraph of the tasks and projects. -->
+        <!-- Download section with pdf and doc icons to click -->
+        <section class="download" id="download-bio">        
+            <h4>Download CV as:</h4>
+            <p><a href="./data/Karim-Aouini-CV.pdf" download><img src="./icons/pdf-icon.svg" alt="An image of a pdf file to download Karim Aouinis CV"/></a></p>
+        </section>
         <section>
-            <h3>Recent Work History</h3>
-            <section class="time-heading">
-                <h4>DevOps</h4>
-                <p><time datetime="2022-02-06">February 2022</time> - <time datetime="2023-02-05">Ongoing</time> full time DevOps course at <a href="https://techstarter.de/">Techstarter GmbH</a></p>
-                <p>In this course I aquired knowledge about different technologies and build up my tech and IT-Project stack.</p>
-            </section>
+
+            <h3>Continuing Education</h3>
+
             <section>
+                <section class="time-heading">
+                    <h4>DevOps Engineering Course</h4>
+                    <p><time datetime="2022-02-06">February 2022</time> - <time datetime="2023-02-05">Ongoing</time></p>
+                    <p>12  month full time apprenticeship in Cloud Computing at <a href="https://techstarter.de/">Techstarter GmbH</a>, stemming certification as “IT-Professional for Cloud Computing & DevOps“ and AWS Solution Architect.</p>
+                </section>
+                <dl>
+                    <dt>Contents:</dt>
+                    <dd>EC2, ECS, SQS, SNS, SES, API, Lambda, IAM, VPC, S3, RDS</dd>
+                    <dd>Containerization & Orchestration (Docker & Kubernetes)</dd>
+                    <dd>Cloud Monitoring & Metrics (Prometheus, Grafana)</dd>
+                    <dd>Infrastructure as Code (IaC - Terraform, Ansible)</dd>
+                    <dd>Continuous Integration & Continuous Delivery (CI/CD)</dd>
+                    <dd>Linux, System Administration</dd>
+                    <dd>Networking & Security</dd>
+                    <dd>Databases (PostgreSQL, MongoDB, DynamoDB)</dd>
+                    <dd>Agile Software-Development (Scrum)</dd>
+                    <dd>Software Testing</dd>
+                    <dd>NodeJS, Python, Bash</dd>
+                </dl>
+                <!-- IDEA: Short description of projects with Link to Project below -->
                 <h5>Projects</h5>
                 <dl>
-                    <dt>Serverless Messaging App</dt>
-                    <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis vero, voluptatem fugit </dd>
-                    <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis vero, voluptatem fugit </dd>
-                    <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis vero, voluptatem fugit </dd>
-                    <dt>Containerized fullstack WebApp</dt>
-                    <dd>Project description follows</dd>
+                    <dt>Provisioning of a Microservices Infrastructure via Terraform</dt>
+                    <dd>capitalizing on Lambda, SNS, SQS, DynamoDB, S3 & API-Gateway as Microservices Architecture.</dd>
+                    <dd>The minimalistic HTML-Frontend enables users to list available messages by UUID, sender & recipient, to leave a password protected message or retrieve a message with the right password.</dd>
+                    <dd>The messages are passed through Lambda which handles the PGP Encryption and password verification.</dd>
+                    <dt>Development of a Containerized fullstack WebApp</dt>
+                    <dd>built on a MERN Stack.</dd>
+                    <dd>The App leverages OAuth2 & OpenIDConnect for social login through Google Identity Servcies.</dd>
+                    <dd>Users can search and add places to their profile along personal notes and dates.</dd>
+                    <dd>Open-Street-Map is embedded with <a href="https://leafletjs.com/">Leaflet</a> and reverse geocoding through the <a href="https://nominatim.org/">Nominatim</a> API</dd>
                 </dl>
             </section>
         </section>
+        
+        <h3>Work Experience</h3>
+
         <section>
             <section class="time-heading">
                 <h4>Aouini Services & Consultancy</h4>
-                <p><time datetime="2020-05-01">05/2020</time> - <time datetime="2021-07-31">10/2022</time> Sole proprietor</p>
-                <p>SHORT DESCRIPTION OF TASKS</p>
+                <p><time datetime="2020-07-01">07/2020</time> - <time datetime="2023-01-31">01/2023</time></p>
+                <p>Self employed consultancy for small scale fruit & vegetable producers in addition to interior landscaping for gastronomy.</p>
             </section>
             <section>
                 <h5>Projects</h5>
                 <dl>
                     <dt>Interior Landscaping</dt>
-                    <dd>Project description follows</dd>
-                    <dt>Small Scale Producer Consultancy</dt>
-                    <dd>Project description follows</dd>
-                    <dt>Seasonal Contractor</dt>
-                    <dd>Project description follows</dd>
+                    <dd>Refreshing gastronomic and cultural spaces with well designed and thoroughly planned plant installations.</dd>
+                    <dd>Combining modern LED technology & aeroponics to ensure striving plants in difficult environments.</dd>
+
+                    <dt>Consultancy & Contractor</dt>
+                    <dd>quibusdam consectetur distinctio nemo quis, corporis modi? Enim quibusdam animi totam aliquid debitis voluptatem.</dd>
+                    <dd>quibusdam consectetur distinctio nemo quis, corporis modi? Enim quibusdam animi totam aliquid debitis voluptatem.</dd>
                 </dl>
             </section>
         </section>
