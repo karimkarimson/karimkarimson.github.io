@@ -3,10 +3,14 @@
 
 /* -------------- */
 /*? general ideas */
-/** styling for mobile first, then laptop and desktop screen sizes */
+/* styling for mobile first, then laptop and desktop screen sizes */
+/* No Javascript */
+/* css animations should be able to be turned off and yet preserving the functionality of the site */
 
 
-
+/* --------------- */
+/* TODOs: */
+/* Skill menu vertical align with main menu */
 /* --------------- */
 
 /* ? stlying */
@@ -40,11 +44,11 @@ body {
     line-height: 1.3em;
 }
 /* * adapt to darkmode */
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   .download img {
     filter: invert(1);
   }
-}
+} */
 
 /* ? header section styling */
 #karimsface {
@@ -54,14 +58,17 @@ body {
     height: 12.5rem;
 }
 /** Navbar-Logic */
+/* collapsing navbar, aligned right */
 .hamburger {
   position: fixed;
+  /* margin: 1em 1em 0 0; */
   top: 1em;
-  right: 2em;
+  right: 0em;
   z-index: 99;
   background: white;
   cursor: pointer;
 }
+/* list that is hidden by default  */
 .menu {
   position: fixed;
   top: 2em;
@@ -126,6 +133,63 @@ body {
     margin: 0 3em 0 0;
     float: right;
   }
+
+  /** Section Menu Styling */
+  /* collapsable, aligned left */
+  .navigation-skills {
+    position: sticky;
+    inset: 0 auto auto 0;
+  }
+  .sub {
+    position: absolute;
+    top: 1em;
+    left: 0em;
+    z-index: 99;
+    /* margin: 1em 1em 0 0; */
+    inset: 1em auto auto 0;
+
+    /* z-index: 99; */
+    background: white;
+    cursor: pointer;
+  }
+  .sub-menu {
+    position: absolute;
+    top: 2em;
+    left: 0em;	
+    z-index: 90;
+    /* inset: 1em auto 0 0; */
+
+    display: flex;
+    flex-direction: column;
+    gap: .3em;
+
+    list-style: none;
+    background: rgba(255, 255, 255, 0.95);
+
+    transform: translateX(-120%);
+    transition: transform 0.3s ease;
+  }
+  .sub-menu:target { 
+    /* show menu */
+    transform: translateX(0%);
+   }
+   /* menu appears on scroll */
+   @keyframes showmenu {
+    0% {
+      transform: translateX(-120%);
+    }
+    50% {
+      transform: translateX(0%);
+    }
+    /* 100% {
+      transform: translateX(0%);
+    } */
+   }
+   @media (prefers-reduced-motion: no-preference) {
+    .navigation-skills {
+      animation: showmenu 1s 1;
+    }
+   }
 
   /* ! styling sections */
   /* download sections */

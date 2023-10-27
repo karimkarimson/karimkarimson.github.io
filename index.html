@@ -6,14 +6,17 @@
     <link rel="stylesheet" href="./style.css">
     <title>Karim Aouini</title>
 </head>
+
+<!--! This Website should work without JavaScript, so the focus for now is to only use HTML and CSS. -->
+
 <body>
     <header>
         <img id="karimsface" src="./imgs/face.png" alt="Karim Aouini’s face" width="200" height="200">
     </header>
     <nav>        
         <a class="hamburger" href="#menu">
-            <span class="material-icons">
-            &#x2630; Menu
+            <span>
+            &#x2630; Main Menu
             </span>
         </a>
         <ol class="menu" id="menu">
@@ -22,7 +25,7 @@
             <li><a href="#projects">Projects</a></li>
             <li><a href="#blog">Blog</a></li>
             <li><a href="#contact">Contact</a></li>
-            <li><a class="close" href="#">&#10006; Close</a></li>
+            <li><a class="close" href="">&#10006; Close</a></li>
         </ol>
     </nav>
     <!-- main content of the site is the presentation of Karim Aouini -->
@@ -33,17 +36,43 @@
         <p>striving to become a <a href="https://about.gitlab.com/topics/devops/">DevOps</a>, skilled as a <a href="https://en.wikipedia.org/wiki/Solution_architecture">Solution Architect</a>, <a href="https://csrc.nist.gov/glossary/term/system_administrator">System Administrator</a> and <a href="https://en.wikipedia.org/wiki/Web_development">Web Developer</a> from Berlin, Germany.</p>
         <p>If you want to know more about my professional side checkout my <a href="#skills">Skills</a> & <a href="#biography">Biography</a>, <a href="#blog">Blog</a> or my <a href="#projects">Projects</a> and feel free to <a href="#contact">Contact</a> me if you have any questions or suggestions.</p>
     </main>
-    <hr>
+    <!-- moved following hr down because of sticky navigation -->
+    <!-- <hr> -->
     <!-- Different sections of the site start here -->
     <section id="skills">
+        <!-- Sticky Navigation Menu for Skill Section -->
+        <!-- To make the navigation appear on scroll i would need to use intersectionObserver in js -->
+        <nav class="navigation-skills">        
+            <a class="sub" href="#skills-menu">
+                <span>
+                &#x2630; Skills Menu
+                </span>
+            </a>
+            <ol class="sub-menu" id="skills-menu">
+                <li><a href="#download-tech">Download CV</a></li>
+                <li><a href="#certification">Certifications</a></li>
+                <li><a href="#cloud">Cloud</a></li>
+                <li><a href="#programminglanguages">Programming Languages</a></li>
+                <li><a href="#iac">IaC</a></li>
+                <li><a href="#containerization">Containerization</a></li>
+                <li><a href="#devops">DevOps</a></li>
+                <li><a href="#operatingsystems">OS</a></li>
+                <li><a href="#databases">OS</a></li>
+                <li><a href="#tools">Tools</a></li>
+                <li><a href="#languagues">Languages</a></li>
+                <li><a class="close" href="#skills">&#10006; Close</a></li>
+            </ol>
+        </nav>
+        <hr>
         <h2>Skills</h2>
         <hr>
-        <section class="download">        
+        <!-- Download section with pdf and doc icons to click -->
+        <section class="download" id="download-tech">        
             <h4>Download Tech-CV as:</h4>
             <p><a href="./data/Karim-Aouini-ProjectCV.pdf" download><img src="./icons/pdf-icon.svg" alt="An image of a pdf file to download Karim Aouinis Project-CV"/></a> or <a href="./data/Karim-Aouini-ProjectCV.docx" download><img src="./icons/doc-icon.svg" alt="An image of a .doc file to download Karim Aouinis Project-CV"></a></p>
         </section>
-        <!-- the article has different sections -->
-        <section>
+        <!-- main Skill Section start -->
+        <section id="certification">
             <h3>Certifications</h3>
             <ul>
                 <li>AWS Cloud Practitioner</li>
@@ -51,13 +80,13 @@
                 <li>LPIC-1 (ongoing)</li>
             </ul>
         </section>
-        <section>
+        <section id="cloud">
             <h3>Cloud</h3>
             <p>AWS: Simple Storage Service (S3), Elastic Compute Cloud (EC2), Auto Scaling, Lambda, Elastic Container Service (ECS), Fargate, Relational Database Service (RDS),   DynamoDB, DocumentDB, Elasticache, Identity and Access Management (IAM), Cognito, API Gateway, Route 53, Simple Queue Service (SQS), Simple Notification Service (SNS), Elastic Beanstalk, Cloud Formation, Virtual Private Cloud (VPC), Command Line Interface (AWS CLI),  CloudWatch, Well-Architected Tool</p>
         </section>
-        <section>
+        <section id="programminglanguages">
             <h3>Programming Languages</h3>
-            <!-- I’m splitting Backend and Frontend Languages -->
+            <!-- splitting Backend and Frontend Languages -->
             <section>
                 <h4>Backend</h4>
                 <ul>
@@ -77,7 +106,7 @@
                 </ul>
             </section>
         </section>
-        <section>
+        <section id="iac">
             <h3>Infrastructure as Code (IaC)</h3>
             <ul>
                 <li>Terraform, HCL - v 18.+</li>
@@ -85,14 +114,14 @@
                 <li>YAML, JSON</li>
             </ul>
         </section>
-        <section>
+        <section id="containerization">
             <h3>Containerization & Orchestration</h3>
             <ul>
                 <li>Docker (Compose, Swarm, ECS)</li>
                 <li>Kubernetes</li>
             </ul>
         </section>
-        <section>
+        <section id="devops">
             <h3>DevOps</h3>
             <ul>
                 <li>GitHub, GitLab</li>
@@ -100,7 +129,7 @@
                 <li>Ansible</li>
             </ul>
         </section>
-        <section>
+        <section id="operatingsystems">
             <h3>Operation Systems</h3>
             <ul>
                 <li>Linux 5.1+ (Debian 11.+, Ubuntu 16.4+, Arch, Amazon Linux 1 & 2)</li>
@@ -108,7 +137,7 @@
                 <li>MacOS - 12, 11, 10+</li>
             </ul>
         </section>
-        <section>
+        <section id="databases">
             <h3>Databases</h3>
             <ul>
                 <li>MongoDB, DocumentDB</li>
@@ -117,7 +146,7 @@
                 <li>Redis, Elasticache</li>
             </ul>
         </section>
-        <section>
+        <section id="tools">
             <h3>Tools</h3>
             <ul>
                 <li>VCS - Git, GitHub, GitLab</li>
@@ -130,7 +159,7 @@
                 <li>Miro, Figma</li>
             </ul>
         </section>
-        <section>
+        <section id="languages">
             <h3>Languages</h3>
             <ul>
                 <li>German <span>native</span></li>
@@ -142,9 +171,12 @@
         </section>
     </section>
     <hr>
+    <!--* Biography Section -->
     <section class="biography" id="biography">
         <h2>Biography</h2>
         <hr>
+        <!--TODO: Sticky Navigation Menu for Biography Section -->
+        <!-- Most Chapters have Datetime-Spans and a short description-paragraph of the tasks and projects. -->
         <section>
             <h3>Recent Work History</h3>
             <section class="time-heading">
@@ -238,8 +270,12 @@
         </section>
     </section>
     <hr>
+    <!--* Blog Section -->
+    <!-- TODO: 1. (When there are more Blogposts) Navigation Menu for Blog Section -->
+    <!-- TODO: 2. styling to appear more as a blogpost -->
     <section id="blog">
         <h2>Blog</h2>
+        <hr>
         <article>
             <h3>Let's talk Operating Systems - Part 1</h3>
             <p>Operating systems connect computer hardware and software. They translate zeros and ones to human readable and sometimes even enjoyable formats.
@@ -253,8 +289,11 @@
         </article>
     </section>
     <hr>
+    <!--* Project Section -->
+    <!-- Projects have descriptions and a link to the hosted project. -->
     <section id="projects">
         <h2>Projects</h2>
+        <hr>
         <dl>
             <dt>Battuti</dt>
             <dd>A travel planning website with user registration and open street maps, leveraging social login via Open ID Connect, OAuth2 and Google Identity Services. </dd>
@@ -271,14 +310,17 @@
         </dl>
     </section>
     <hr>
-    <section id="contact">
+    <!--* Contact section -->
+    <!-- each method of contact has its own icon and link -->
+    <section class="contact" id="contact">
         <h2>Contact</h2>
+        <hr>
         <p>Feel free to contact me:</p>
         <address>
-            <p><a href="mailto:karim@aouini.de">karim@aouini.de</a></p>
-            <p><a href="tel:+17696751369">+49 176 96 751 369</a></p>
-            <p><a href="https://www.linkedin.com/in/karimaouini/">Karim on LinkedIn</a></p>
-            <p><a href="https://github.com/karimkarimson">Karim on GitHub</a></p>
+            <p>&#9993; <a href="mailto:karim@aouini.de">karim@aouini.de</a></p>
+            <p>&#9743; <a href="tel:+17696751369">+49 176 96 751 369</a></p>
+            <p><img src="./icons/linkedin-icon.svg" alt="LinkedIn Logo that is followed by a link taking you to Karim Aouinis LinkedIn site"> <a href="https://www.linkedin.com/in/karimaouini/">Karim on LinkedIn</a></p>
+            <p><img src="./icons/github-icon.svg" alt="GitHub Icon followed by a link that takes you to Karim Aouinis GitHub site"> <a href="https://github.com/karimkarimson">Karim on GitHub</a></p>
         </address>
     </section>
 </body>
