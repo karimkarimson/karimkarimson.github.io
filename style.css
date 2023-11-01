@@ -79,34 +79,17 @@ hr {
 }
 h1, h2, h3, h4, h5, h6 {
   margin: 0 0 0 0;
-}
-h1 {
-  font: 1.8em 'RobotoBold', 'Arial', sans-serif; 
-  letter-spacing: 0em;
-}
-h2 {
-  font: 1.6em 'RobotoBold', 'Arial', sans-serif; 
-  letter-spacing: 0em;
-}
-h3 {
-  font: 1.5em 'RobotoBold', 'Arial', sans-serif; 
-  letter-spacing: 0em;
-}
-h4 {
-  font: 1.5em 'RobotoRegular', 'Arial', sans-serif;
-}
-h5, h6 {
-  font: 1.3em 'RobotoMedium', 'Arial', sans-serif; 
+  font: 1.6em 'RobotoBold', 'Arial', sans-serif;
   letter-spacing: 0em;
 }
 /*? p und a größen variieren in den Grundeinstellungen? */
 p {
-  font: 1.6em 'RobotoRegular', 'Arial', sans-serif; 
+  font: 1.4em 'RobotoRegular', 'Arial', sans-serif; 
   letter-spacing: 0.03em; 
 }
 a {
   color: rgb(26, 26, 100);
-  font: 1.0em 'RobotoItalic', 'Arial', sans-serif; 
+  font-family: 'RobotoItalic', 'Arial', sans-serif; 
   /* letter-spacing: 0.0em; */
 
   text-decoration: none;
@@ -116,10 +99,13 @@ a:active{
   text-decoration: underline;
   background-color: rgba(238, 216, 118, 0.8);
 }
-li, span {
-  font: 1.4em 'RobotoLight', 'Arial', sans-serif; 
+li {
+  font: 1.4em 'RobotoRegular', 'Arial', sans-serif; 
   letter-spacing: 0.03em; 
-
+}
+span {
+  font: 1.4em 'RobotoRegular', 'Arial', sans-serif;
+  letter-spacing: 0;
 }
 dt {
   font: 1.4em 'RobotoMediumItalic', 'Arial', sans-serif; 
@@ -130,8 +116,7 @@ dd {
   letter-spacing: 0.02em;
 }
 time {
-  font: 1em 'RobotoLightItalic', 'Arial', sans-serif;
-  letter-spacing: 0em;
+  font-family: 'RobotoMedium', 'Arial', sans-serif;
 }
 summary {
   font: 1.4em 'RobotoMedium', 'Arial', sans-serif;
@@ -155,7 +140,7 @@ body {
   position: fixed;
   /* margin: 1em 1em 0 0; */
   top: 1em;
-  left: 0.8em;
+  left: 1.2em;
   z-index: 99;
   background: white;
   cursor: pointer;
@@ -163,7 +148,7 @@ body {
 /* list that is hidden by default  */
 .menu {
   position: fixed;
-  top: 1.35em;
+  top: 1.8em;
   left: 0em;
   z-index: 90;
 
