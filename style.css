@@ -424,10 +424,16 @@ template {
   display: none;
 }
 
+
+
+
 /* ! MY STYLING */
 /* hr, h1, h2, h3, h4, h5, h6, p {
   margin: 0 0 0 0;
 } */
+hr {
+  margin: 2em 0 2em 0;
+}
 h1, h2, h3, h4, h5, h6 {
   font: 1.6em 'RobotoBold', 'Arial', sans-serif;
 }
@@ -448,10 +454,11 @@ span {
   font: 1.4em 'RobotoRegular', 'Arial', sans-serif;
 }
 dt {
+  margin: 1em 0 1em 0;
   font: 1.4em 'RobotoMediumItalic', 'Arial', sans-serif; 
 }
 dd {
-  font: 1.3em 'RobotoMedium', 'Arial', sans-serif;
+  font: 1.4em 'RobotoMedium', 'Arial', sans-serif;
 }
 time {
   font-family: 'RobotoMediumItalic', 'Arial', sans-serif;
