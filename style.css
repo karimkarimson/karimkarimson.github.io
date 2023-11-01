@@ -553,11 +553,22 @@ body {
   body {
     width: 50%;
   }
+  .hamburger {
+    left: 15%;
+  }
+  .menu {
+    left: 13%;
+    transform: translateX(-400%);
+  }
+  footer {
+    /* right: 15em; */
+    right: 17%;
+  }
 }
 
 /* ! Desktop Size Screens */
-@media (min-width: 1200px) {
+/* @media (min-width: 1200px) {
   body {
     width: 40%;
   }
-}
+} */
