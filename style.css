@@ -428,22 +428,23 @@ template {
 
 
 /* ! MY STYLING */
-h1, h2, h3, h4, h5, h6, p {
-  margin: 0 0 0 0;
-}
-h1, h2 {
-  margin: 1em 0 1em 0;
+body {
+  font: 1.4em 'RobotoRegular', 'Arial', sans-serif;
 }
 hr {
   margin: 2em 0 2em 0;
 }
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0 0 0 0;
+}
+h1, h2 {
+  margin: 0.5em 0 0.5em 0;
+}
 h1, h2, h3, h4, h5, h6 {
-  font: 1.6em 'RobotoBold', 'Arial', sans-serif;
+  font: 1.4em 'RobotoBold', 'Arial', sans-serif;
 }
 p {
-  font: 1.4em 'RobotoRegular', 'Arial', sans-serif; 
   margin: 0 0 0.5em 0;
-  line-height: 1.3em;
 }
 a {
   color: rgb(26, 26, 100);
@@ -452,24 +453,12 @@ a {
   text-decoration: none;
   border-bottom: 1px solid rgba(117, 117, 117, 0.877);
 }
-li {
-  font: 1.4em 'RobotoRegular', 'Arial', sans-serif; 
-}
-span {
-  font: 1.4em 'RobotoRegular', 'Arial', sans-serif;
-}
-dt {
+dt, time {
   margin: 1em 0 1em 0;
-  font: 1.4em 'RobotoMediumItalic', 'Arial', sans-serif; 
+  font-family: 'RobotoMediumItalic', 'Arial', sans-serif; 
 }
-dd {
-  font: 1.4em 'RobotoMedium', 'Arial', sans-serif;
-}
-time {
-  font-family: 'RobotoMediumItalic', 'Arial', sans-serif;
-}
-summary {
-  font: 1.4em 'RobotoMedium', 'Arial', sans-serif;
+dd, summary {
+  font-family: 'RobotoMedium', 'Arial', sans-serif;
 }
 body {
     width: 85%;
@@ -515,6 +504,10 @@ body {
   /* show menu */
   transform: translateX(0%);
 }
+.menu a {
+  font: 1.2em 'RobotoRegular', 'Arial', sans-serif;
+  text-decoration: none;
+}
 
 
 
@@ -527,6 +520,9 @@ body {
   /* * styling Header */
   header {
     text-align: right;
+  }
+  li li {
+    font-size: 1em;
   }
 
   /* ! styling sections */
