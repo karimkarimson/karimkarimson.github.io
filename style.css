@@ -84,6 +84,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 /*? p und a größen variieren in den Grundeinstellungen? */
 p {
+  margin: 0 0 0 0;
   font: 1.4em 'RobotoRegular', 'Arial', sans-serif; 
   letter-spacing: 0.03em; 
 }
@@ -112,11 +113,12 @@ dt {
   letter-spacing: 0.03em; 
 }
 dd {
-  font: 1.3em 'RobotoLight', 'Arial', sans-serif;
+  font: 1.3em 'RobotoMedium', 'Arial', sans-serif;
   letter-spacing: 0.02em;
 }
 time {
-  font-family: 'RobotoMedium', 'Arial', sans-serif;
+  font-family: 'RobotoMediumItalic', 'Arial', sans-serif;
+  margin: 0 0 0 0;
 }
 summary {
   font: 1.4em 'RobotoMedium', 'Arial', sans-serif;
@@ -175,11 +177,8 @@ body {
 @media (min-width: 320px) {
   /** general styling */
   /** styling headings */
-  h1 {
+  h1, h2, h3 {
     margin: 1em 0 0 0;
-  }
-  h2, h3 {
-    margin: 1em 0 0.5em 0;
   }
   /** styling lists and list elements*/
   ul {
@@ -215,6 +214,9 @@ body {
   }
 
   /* ! styling sections */
+  main p {
+    margin: 0.5em 0 1em 0;
+  }
 }
 /* ! Tablet Screens */
 /* @media (min-width: 768px) {} */
