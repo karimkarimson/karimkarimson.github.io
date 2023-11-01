@@ -8,6 +8,7 @@
 </head>
 
 <!--! This Website should work without JavaScript, so the focus for now is to only use HTML and CSS. -->
+<!--! no tracking, no cookies -->
 
 <body>
     <header>
@@ -29,14 +30,10 @@
     </nav>
     <!-- main content of the site is the presentation of Karim Aouini -->
     <main>
-        <!-- hgroup is used to group a paragraph and heading, in this case to add a p as a tagline -->
-        <!-- !got that part wrong. hgroup is to group multiple headings -->
         <h1>Hi, I’m Karim Aouini,</h1>
         <p>striving to become a <a href="https://about.gitlab.com/topics/devops/">DevOps</a>, skilled as a <a href="https://en.wikipedia.org/wiki/Solution_architecture">Solution Architect</a>, <a href="https://csrc.nist.gov/glossary/term/system_administrator">System Administrator</a> and <a href="https://en.wikipedia.org/wiki/Web_development">Web Developer</a> from Berlin, Germany.</p>
         <p>If you want to know more about my professional side checkout my <a href="#skills">Skills</a> & <a href="#biography">Biography</a> or my <a href="#projects">Projects</a> and feel free to <a href="#contact">Contact</a> me if you have any questions or suggestions.</p>
     </main>
-    <!-- moved following hr down because of sticky navigation -->
-    <!-- <hr> -->
     <!-- Different sections of the site start here -->
     <hr>
     <section class="download" id="downloads">
@@ -48,9 +45,9 @@
         </ul>
     </section>
     <hr>
+    <!--* Skill Section -->
     <section class="skills" id="skills">
         <h2>Skills</h2>
-        <!-- main Skill Section start -->
         <section id="certification">
             <details>
                 <summary>Certifications </summary>
@@ -191,11 +188,7 @@
     <!--* Biography Section -->
     <section class="biography" id="biography">
         <h2>Biography</h2>
-        <!--TODO: Sticky Navigation Menu for Biography Section -->
-        <!-- Most Chapters have Datetime-Spans and a short description-paragraph of the tasks and projects. -->
-        <!-- Download section with pdf and doc icons to click -->
         <section>
-
             <h2>Continuing Education</h2>
 
             <section>
@@ -243,10 +236,8 @@
                 </details>
             </section>
         </section>
-
-        <h2>Work Experience</h2>
-
-        <section>
+        <section class="bio">
+            <h2>Work Experience</h2>
             <h3>Aouini Services & Consultancy</h3>
             <p><time datetime="2020-07-01">07/2020</time> - <time datetime="2023-01-31">01/2023</time></p>
             <p>Self employed consultancy for small scale fruit & vegetable producers in addition to interior landscaping for gastronomy.</p>
@@ -270,7 +261,7 @@
                 </ul>
             </details>
         </section>
-        <section>
+        <section class="bio">
             <h3>Bellmer GmbH</h3>
             <p><time datetime="2021-08-01">10/2021</time> - <time datetime="2022-05-31">05/2022</time></p>
             <p>Assisstant Manager</p>
@@ -286,8 +277,8 @@
                 </dl>
             </details>
         </section>
-        <section class="education">
-            <h3>Education</h3>
+        <section class="bio">
+            <h2>Education</h2>
             <section>
                 <section class="time-heading">
                     <h3>BSc. Horticulture</h3>
@@ -310,7 +301,7 @@
                 <p><a href="https://sgym.de/">Schiller Gymnasium</a></p>
             </section>
         </section>
-        <section>
+        <!-- <section>
             <h3>Social Engagement</h3>
             <dl>
                 <dt>Assistant to a handicapped artist</dt>
@@ -320,27 +311,31 @@
                 <dt>Scout group leader</dt>
                 <dd>Organizing regular meetings and hikes for a scout group</dd>
             </dl>
-        </section>
+        </section> -->
     </section>
     <hr>
     <!--* Project Section -->
     <!-- Projects have descriptions and a link to the hosted project. -->
     <section id="projects">
         <h2>Projects</h2>
-        <dl>
-            <dt>Battuti</dt>
-            <dd>A travel planning website with user registration and open street maps, leveraging social login via Open ID Connect, OAuth2 and Google Identity Services. </dd>
-            <dd>Open Street Map was embedded through Leaflet. Geolocation search <dfn>reverse geocoding</dfn> is handled by the Nominatim API</dd>
-            <dd>Built in a MERN Stack, using MongoDB Atlas.</dd>
-            <dd><a href="#">Link</a> following soon</dd>
+        <ul>
+            <li>Battuti</li>
+            <ul>
+                <li>A travel planning website with user registration and open street maps, leveraging social login via Open ID Connect, OAuth2 and Google Identity Services. </li>
+                <li>Open Street Map was embelied through Leaflet. Geolocation search <dfn>reverse geocoding</dfn> is handled by the Nominatim API</li>
+                <li>Built in a MERN Stack, using MongoDB Atlas.</li>
+                <li><a href="#">Link</a> following soon</li>
+            </ul>
 
-            <dt>QuizMe</dt>
-            <dd>A local multiplayer & in browser game.</dd>
-            <dd>You can choose the number of players, the categories and difficulties of the questions.</dd>
-            <dd>It is designed to load your own questions catalogue into it.</dd>
-            <dd>Built with HTML, CSS and Javascript</dd>
-            <dd><a href="#">Link</a> following soon</dd>
-        </dl>
+            <li>QuizMe</li>
+            <ul>
+                <li>A local multiplayer & in browser game.</li>
+                <li>You can choose the number of players, the categories and difficulties of the questions.</li>
+                <li>It is designed to load your own questions catalogue into it.</li>
+                <li>Built with HTML, CSS and Javascript</li>
+                <li><a href="#">Link</a> following soon</li>
+            </ul>
+        </ul>
     </section>
     <hr>
     <!--* Contact section -->
@@ -351,11 +346,10 @@
         <address>
             <p><a href="mailto:karim@aouini.de">karim@aouini.de</a></p>
             <p><a href="tel:+4917696751369">+49 176 96 751 369</a></p>
-            <!-- <p><img src="./icons/linkedin-icon.svg" alt="LinkedIn Logo that is followed by a link taking you to Karim Aouinis LinkedIn site"> <a href="https://www.linkedin.com/in/karimaouini/">Karim on LinkedIn</a></p> -->
-            <!-- <p><img src="./icons/github-icon.svg" alt="GitHub Icon followed by a link that takes you to Karim Aouinis GitHub site"> <a href="https://github.com/karimkarimson">Karim on GitHub</a></p> -->
-            <p><a href="https://www.linkedin.com/in/karimaouini/">Karim on LinkedIn</a></p>
-            <p><a href="https://github.com/karimkarimson">Karim on GitHub</a></p>
+            <p>Karim on <a href="https://www.linkedin.com/in/karimaouini/">LinkedIn</a></p>
+            <p>Karim on <a href="https://github.com/karimkarimson">GitHub</a></p>
         </address>
     </section>
+    <footer><a href="#contact">Impressum</a></footer>
 </body>
 </html>

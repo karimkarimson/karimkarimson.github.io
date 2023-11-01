@@ -10,7 +10,6 @@
 
 /* --------------- */
 /* TODOs: */
-/* Akkordeons für Subsections */
 /* impressum footer, immer sichtbar rechts unten href="#contact"*/
 /* --------------- */
 
@@ -434,17 +433,19 @@ body {
 hr {
   margin: 2em 0 2em 0;
 }
-h1, h2, h3, h4, h5, h6, p {
+h1, h2, h3, h4, h5, h6, p, ul{
   margin: 0 0 0 0;
 }
 h1, h2 {
   margin: 0.5em 0 0.5em 0;
 }
 h1, h2, h3, h4, h5, h6 {
-  font: 1.4em 'RobotoBold', 'Arial', sans-serif;
+  font-family: 'RobotoBold', 'Arial', sans-serif;
+  font-size: 1.1em;
 }
 p {
   margin: 0 0 0.5em 0;
+  line-height: 1.4em;
 }
 a {
   color: rgb(26, 26, 100);
@@ -453,12 +454,18 @@ a {
   text-decoration: none;
   border-bottom: 1px solid rgba(117, 117, 117, 0.877);
 }
+li {
+  margin: 0.5em 0 0.5em 0;
+}
+ul, summary {
+  margin: 0 0 0.5em 0;
+}
 dt, time {
   margin: 1em 0 1em 0;
-  font-family: 'RobotoMediumItalic', 'Arial', sans-serif; 
 }
-dd, summary {
-  font-family: 'RobotoMedium', 'Arial', sans-serif;
+section.biography h3 {
+  margin: 1em 0 0 0;
+  font-family: 'RobotoRegular', 'Arial', sans-serif;
 }
 body {
     width: 85%;
@@ -478,7 +485,7 @@ body {
   position: fixed;
   /* margin: 1em 1em 0 0; */
   top: 1em;
-  left: 1.2em;
+  left: 1.9em;
   z-index: 99;
   background: white;
   cursor: pointer;
@@ -486,13 +493,12 @@ body {
 /* list that is hidden by default  */
 .menu {
   position: fixed;
-  top: 1.8em;
+  top: 1.3em;
   left: 0em;
   z-index: 90;
 
   display: flex;
   flex-direction: column;
-  gap: .3em;
 
   list-style: none;
   background: rgba(255, 255, 255, 0.95);
@@ -505,8 +511,12 @@ body {
   transform: translateX(0%);
 }
 .menu a {
-  font: 1.2em 'RobotoRegular', 'Arial', sans-serif;
+  font-family: 'RobotoRegular', 'Arial', sans-serif;
   text-decoration: none;
+}
+
+.bio h2 {
+  margin: 1em 0 1em 0;
 }
 
 
@@ -521,8 +531,16 @@ body {
   header {
     text-align: right;
   }
+  /* styling for nested lists */
   li li {
     font-size: 1em;
+  }
+  footer {
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
+
+    background-color: rgba(255, 255, 255, 0.95);
   }
 
   /* ! styling sections */
