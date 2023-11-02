@@ -71,6 +71,34 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'GeistBold';
+    src: url('./fonts/Geist-Bold.otf') format('opentype'),
+         url('.fonts/Geist-Bold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GeistMedium';
+    src: url('./fonts/Geist-Medium.otf') format('opentype'),
+         url('.fonts/Geist-Medium.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GeistRegular';
+    src: url('./fonts/Geist-Regular.otf') format('opentype'),
+         url('.fonts/Geist-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GeistSemiBold';
+    src: url('./fonts/Geist-SemiBold.otf') format('opentype'),
+         url('.fonts/Geist-SemiBold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
 
 /** css reset */
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -428,7 +456,9 @@ template {
 
 /* ! MY STYLING */
 body {
-  font: 1.4em 'RobotoRegular', 'Arial', sans-serif;
+  font-family: 'RobotoRegular', 'Arial', sans-serif;
+  /* font-family: 'GeistRegular', 'Arial', sans-serif; */
+  font-size: 1.4em;
 }
 hr {
   margin: 2em 0 2em 0;
@@ -439,8 +469,14 @@ h1, h2, h3, h4, h5, h6, p, ul{
 h1, h2 {
   margin: 0.5em 0 0.5em 0;
 }
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'RobotoBold', 'Arial', sans-serif;
+h1, h2 {
+  font-family: 'GeistMedium', 'Arial', sans-serif;
+  font-size: 1.2em;
+  letter-spacing: 0.04em;
+}
+h3, h4, h5, h6 {
+  font-family: 'RobotoRegular', 'Arial', sans-serif;
+  /* font-family: 'GeistRegular', 'Arial', sans-serif; */
   font-size: 1.1em;
 }
 p {
